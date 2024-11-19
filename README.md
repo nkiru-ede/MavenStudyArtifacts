@@ -41,14 +41,14 @@ Note: To install dependencies on MacOs, you may need to use 'brew' command
 | Script | Input | Output |
 | --- | --- | --- |
 |GAVtoGA.py |  path to dataset/cleaned_final_output.csv | `plots/GAV_GA_counts`|
-|
+
 
 
 #### Step 4: Compute gini
 | Script | Input | Output |
 | --- | --- | --- |
 |GAVtoGA.py |  path to dataset/cleaned_final_output.csv | `plots/GAV_GA_counts`|
-|
+
 
 
 

@@ -9,7 +9,7 @@ import pandas as pd
 
 yearly_counts = {}
 
-for chunk in pd.read_csv("C:\\Users\\edenk\\.spyder-py3\\cleaned_final_output.csv", chunksize=100000):
+for chunk in pd.read_csv("path to dataset\\cleaned_final_output.csv", chunksize=100000):
 
     chunk['year'] = chunk['source_release'].str[:4].astype(int)
 

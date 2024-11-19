@@ -83,7 +83,7 @@ def calculate_gini_from_csv(file_path):
 
     return gini_per_year
 
-file_path = "C:\\Users\\edenk\\.spyder-py3\\cleaned_final_output.csv"
+file_path = "path to dataset\\cleaned_final_output.csv"
 
 gini_per_year = calculate_gini_from_csv(file_path)
 

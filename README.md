@@ -1,6 +1,3 @@
-# MavenStudyArtifacts
-This repository provides a comprehensive, step-by-step guide for reproducing the study's results, starting from data extraction.
-
 ## Reproducing Results
 
 
@@ -27,7 +24,7 @@ Note: To install dependencies on MacOs, you may need to use 'brew' command
 
 | Input | Output |
 | --- | --- |
-| [Zenodo dataset](https://zenodo.org/records/13734581) | `script` |
+| [Zenodo dataset](https://zenodo.org/records/13734581) | [links_all.csv, release_all.csv](https://zenodo.org/uploads/14184350) |
 | Script | cypherQuery|
 
 #### Step 2: Merge and clean datasets 
@@ -47,7 +44,14 @@ Note: To install dependencies on MacOs, you may need to use 'brew' command
 #### Step 4: Compute gini
 | Script | Input | Output |
 | --- | --- | --- |
-|GAVtoGA.py |  path to dataset/cleaned_final_output.csv | `plots/GAV_GA_counts`|
+|giniGA.py |  path to dataset/cleaned_final_output.csv | `plots/gini_GA`|
+
+
+
+#### Step 5: Relative change in elites
+| Script | Input | Output |
+| --- | --- | --- |
+| |   | |
 
 
 

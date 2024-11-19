@@ -31,7 +31,7 @@ Note: To install dependencies on MacOs, you may need to use 'brew' command
 
 | Script | Input | Output |
 | --- | --- | --- |
-| `scripts/cleanGoblinData.py`|`path to dataset/links_all.csv`, `path to dataset/release_all.csv` |`path to dataset/cleaned_final_output.csv`
+| `scripts/cleanGoblinData.py`|`path to dataset/links_all_new.csv`, `path to dataset/release_all_new.csv` |`path to dataset/cleaned_final_output.csv`
 
 
 #### Step 3: Aggregate GAV to GA 

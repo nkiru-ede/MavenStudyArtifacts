@@ -6,7 +6,7 @@
 
 Install neo4j (version 4.x)
 
-Use Python version 3.*, tested with 3.12.2
+Use Python version 3.*
 
 Install git (any version)
 

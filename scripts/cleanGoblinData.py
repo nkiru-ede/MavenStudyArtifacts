@@ -1,13 +1,5 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Nov 18 15:21:56 2024
-
-@author: edenk
-"""
-
 import pandas as pd
 
-# Load the CSV files
 source_target_df = pd.read_csv("path to dataset\\links_all_new.csv") 
 artifact_release_df = pd.read_csv("path to dataset\\release_all_new.csv")  
 

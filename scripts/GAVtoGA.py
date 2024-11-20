@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Nov 19 10:58:04 2024
-
-@author: edenk
-"""
-
 import pandas as pd
 
 yearly_counts = {}

@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Nov 19 11:04:14 2024
-
-@author: edenk
-"""
-
 #GA gini
 
 import pandas as pd

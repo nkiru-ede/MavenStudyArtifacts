@@ -6,7 +6,7 @@
 
 Install neo4j (version 4.x)
 
-Use Python version 3.*
+Use Python version 3.*, tested with 3.12.2
 
 Install git (any version)
 
@@ -25,13 +25,13 @@ Note: To install dependencies on MacOs, you may need to use 'brew' command
 | Input | Output |
 | --- | --- |
 | [Zenodo dataset](https://zenodo.org/records/13734581) | [links_all.csv, release_all.csv](https://zenodo.org/uploads/14184350) |
-| Script | cypherQuery|
+| Script | script/cypherQuery|
 
 #### Step 2: Merge and clean datasets 
 
 | Script | Input | Output |
 | --- | --- | --- |
-| `scripts/cleanGoblinData.py`|`path to dataset/links_all_new.csv`, `path to dataset/release_all_new.csv` |`path to dataset/cleaned_final_output.csv`
+| `scripts/cleanGoblinData.py`|`path to dataset/links_all.csv`, `path to dataset/release_all.csv` |`path to dataset/cleaned_final_output.csv`
 
 
 #### Step 3: Aggregate GAV to GA 
@@ -47,11 +47,21 @@ Note: To install dependencies on MacOs, you may need to use 'brew' command
 |giniGA.py |  path to dataset/cleaned_final_output.csv | `plots/gini_GA`|
 
 
-
-#### Step 5: Relative change in elites
+#### Step 6: Compute top GAs
 | Script | Input | Output |
 | --- | --- | --- |
-| |   | |
+| script/top500GAs.py| `path to dataset/cleaned_final_output.csv`  |top500_per_year |
+
+
+#### Step 7: Relative change in elites
+| Script | Input | Output |
+| ---| --- | --- |
+| script/eliteChange.py| `path to dataset/top500_per_year.csv`  | `plot/FractionOfReplacement_minus2024`|
+
+#### Step 8: Innovation rate
+| Script | Input | Output |
+| ---| --- | --- |
+| script/innovationRate.py| `path to dataset/release_all_new.csv`  | `plot/MajorReleaseGA`|
 
 
 
